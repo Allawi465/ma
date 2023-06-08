@@ -4,16 +4,27 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      spacing: {
-        1: '8px',
-        2: '12px',
-        3: '16px',
-        4: '24px',
-        5: '32px',
-        6: '48px',
-      },
       colors: {
         dark: '#1a1a1a',
+        darkGrey: '#A8A8A8',
+        lightGray: '#57595F',
+        gold: '#FCF9BF',
+        lightGold: '#D1CF9F',
+        lightDark: '#2B2B2B',
+        lightblue: '#20779E',
+      },
+      fontSize: {
+        sm: '0.8rem',
+        base: '1rem',
+        xl: '1.25rem',
+        '2xl': '1.563rem',
+        '3xl': '1.953rem',
+        '4xl': '2.441rem',
+        '5xl': '3.052rem',
+      },
+      width: {
+        128: '32rem',
+        132: '39rem',
       },
     },
   },

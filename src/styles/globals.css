@@ -2,18 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    background: #1a1a1a;
+@layer base {
+  body {
+    @apply mx-auto max-w-7xl px-2 sm:px-6 lg:px-8;
   }
 }
 
-body {
-  color: white;
-  background: #1a1a1a;
+.swiper {
+  height: 345px !important;
+  padding: 10px !important;
 }
 
-.dark {
-  background-color: #1a1a1a;
-  color: #ffffff;
+.swiper-slide {
+  width: 380px !important;
+}
+
+@media (max-width: 423px) {
+  .swiper-slide {
+    width: 330px !important;
+  }
 }
