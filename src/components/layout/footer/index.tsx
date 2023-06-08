@@ -1,5 +1,10 @@
 export default function Footer() {
   return (
-    <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">Made by Allawi</div>
+    <footer className="py-2 text-center text-sm">
+        <span className="font-bold text-lg mr-2">Allawi</span>
+        <span className="text-lightGray dark:text-darkGrey">
+          &copy; {new Date().getFullYear()} All Rights Reversed
+        </span>
+    </footer>
   );
 }
