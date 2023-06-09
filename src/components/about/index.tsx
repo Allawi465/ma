@@ -1,39 +1,36 @@
 import Image from 'next/image';
-import avatar from '../../../public/me.jpg';
-import Link from 'next/link';
+import MaAvatar from '../../../public/me.jpg';
+import { ArrowRightIcon } from '@heroicons/react/24/solid';
 
-export default function AboutHome() {
+export default function Introduction() {
   return (
-    <div className="flex justify-evenly flex-wrap sm:flex-nowrap flex-row-reverse gap-2 py-4">
-      <div className="pt-3">
-        <Image
-          src={avatar}
-          alt="Mohammed Allawi"
-          width={280}
-          height={280}
-          className="rounded-[30px] object-cover"
-        />
-      </div>
-      <div className="mt-4 relative">
-        <div className="max-w-[516px]">
-          <h1 className="text-4xl md:pt-5">Get to know me</h1>
+    <section id="portfolio" className="py-3">
+      <div className="my-10 sm:my-20 flex justify-evenly flex-wrap sm:flex-nowrap flex-row-reverse gap-2 py-4">
+        <div className="images">
+          <Image
+            src={MaAvatar}
+            className="w-[250px] object-cover rounded-full"
+            alt="image of Mohammed Allawi"
+          ></Image>
         </div>
-        <div className="max-w-[624px] py-2">
-          <p className="text-base text-lightGray dark:text-darkGrey tracking-wide">
-            I am a Front-End Developer graduate from Noroff School of Technology
-            and Digital Media. I am passionate about coding and enjoy the
-            challenges it brings...
-          </p>
-        </div>
-        <div className="py-2 flex justify-center sm:justify-start">
-          <Link
-            href={'/about'}
-            className="bg-dark text-white border border-transparent hover:bg-transparent hover:border-dark hover:text-dark dark:bg-gold dark:text-dark dark:hover:border-lightGold dark:hover:text-gold dark:hover:bg-transparent font-bold py-2 px-4 rounded"
-          >
-            More About Me
-          </Link>
+        <div className="py-4">
+          <h1 className="text-3xl md:pt-4 text-center">
+            Hello, I'm Mohammed Allawi
+          </h1>
+          <h2 className="text-lightGray dark:text-darkGrey text-2xl md:py-2 text-center sm:text-start">
+            Front-end web development and UX designer
+          </h2>
+          <div className="flex justify-center py-3">
+            <a
+              href="#projects"
+              className="group flex bg-dark text-white border border-transparent hover:bg-transparent hover:border-dark hover:text-dark dark:bg-gold dark:text-dark dark:hover:border-lightGold dark:hover:text-gold dark:hover:bg-transparent font-bold py-2 px-10 rounded"
+            >
+              View my work
+              <ArrowRightIcon className="h-6 w-6 ml-1 transition-transform duration-300 transform group-hover:rotate-90" />
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

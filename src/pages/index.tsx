@@ -1,39 +1,39 @@
 'use client';
-import { useContext } from 'react';
 import { Syne } from 'next/font/google';
-import AboutHome from '@/components/about';
-import MySlider from '@/components/projectsSwip';
-import Link from 'next/link';
-import { SliderContext } from '../provider';
-
-import { ArrowRightIcon } from '@heroicons/react/24/solid';
+import Introduction from '@/components/about';
+import Projects from '@/components/projects';
+import AboutMe from '@/components/about/aboutMe';
+import SkillsSection from '@/components/skills';
 
 const inter = Syne({ weight: '400', subsets: ['latin'] });
 
 export default function Home() {
-  const { showSlider } = useContext(SliderContext);
   return (
-    <main
+    <div
       className={`mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-4 ${inter.className}`}
     >
-      <div className="mb-7">
-        {showSlider && (
-          <>
-            <div className="py-0 flex justify-end">
-              <Link
-                href={'/projects'}
-                className="text-lightblue dark:text-sky-400 font-bol flex justify-center"
-              >
-                View my work
-                <ArrowRightIcon className="h-4 w-4 pt-1 mt-1 text-lightblue dark:text-sky-400" />
-              </Link>
-            </div>
-            <MySlider />
-          </>
-        )}
+      <Introduction />
+
+      <div className="arrow-scroll py-[100px] sm:py-[100px]">
+        <a href="#projects">
+          <span className="arrow one border-r-2 border-b-2 border-sky-800 dark:border-sky-400"></span>
+          <span className="arrow two border-r-2 border-b-2 border-sky-800 dark:border-sky-400"></span>
+          <span className="arrow tree border-r-2 border-b-2 border-sky-800 dark:border-sky-400"></span>
+        </a>
+      </div>
+      <Projects />
+
+      <div className="arrow-scroll py-[100px] sm:py-[100px]">
+        <a href="#about">
+          <span className="arrow one border-r-2 border-b-2 border-sky-800 dark:border-sky-400"></span>
+          <span className="arrow two border-r-2 border-b-2 border-sky-800 dark:border-sky-400"></span>
+          <span className="arrow tree border-r-2 border-b-2 border-sky-800 dark:border-sky-400"></span>
+        </a>
       </div>
 
-      <AboutHome />
-    </main>
+      <AboutMe />
+
+      <SkillsSection />
+    </div>
   );
 }

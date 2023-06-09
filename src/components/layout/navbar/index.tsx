@@ -1,11 +1,9 @@
 'use client';
 import Link from 'next/link';
-import { useContext } from 'react';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import ThemeChanger from '../../themeDark';
 import { useRouter } from 'next/router';
-import { SliderContext } from '../../../provider';
 
 interface NavigationItem {
   name: string;
@@ -14,9 +12,9 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: 'Home', href: '/', current: false },
-  { name: 'About me', href: '/about', current: false },
-  { name: 'My work', href: '/projects', current: false },
+  { name: 'Home', href: '#home', current: true },
+  { name: 'About me', href: '#projects', current: false },
+  { name: 'My work', href: '#about', current: false },
 ];
 
 function classNames(...classes: string[]): string {
@@ -26,16 +24,10 @@ function classNames(...classes: string[]): string {
 export default function Navbar() {
   const router = useRouter();
 
-  const { setShowSlider } = useContext(SliderContext);
-
-  const handleShowSlider = () => {
-    setShowSlider((prevShowSlider: boolean) => !prevShowSlider);
-  };
-
   const updatedNavigation = navigation.map((item) => {
     return {
       ...item,
-      current: item.href === router.pathname,
+      current: item.name === 'Home',
     };
   });
 
@@ -74,49 +66,25 @@ export default function Navbar() {
                     <div className="flex space-x-2">
                       {updatedNavigation.map((item) => (
                         <div key={item.name}>
-                          {item.href === '/projects' ? (
+                          <a href={item.href}>
                             <div
                               className={classNames(
                                 item.current
                                   ? 'text-black font-semibold dark:text-gray-100'
-                                  : 'text-lightGray dark:text-darkGrey',
-                                'rounded-md mx-4 pt-2 text-sm font-medium mt-2.5 relative group cursor-pointer'
+                                  : 'text-gray-500 dark:text-gray-400',
+                                'rounded-md mx-4 pt-2 text-sm font-medium mt-2.5 relative group'
                               )}
-                              onClick={handleShowSlider} // Handle click event for "My work" link
+                              aria-current={item.current ? 'page' : undefined}
                             >
                               {item.name}
                               <span
-                                className={`h-[1px] inline-block bg-black dark:bg-white absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
-                                  router.asPath === item.href ? 'w-full' : 'w-0'
+                                className={`h-[1px] inline-block bg-black dark:bg-white absolute left-0 -bottom-0.5 group-hover:w-full w-0 transition-[width] ease duration-300'
                                 }`}
                               >
                                 &nbsp;
                               </span>
                             </div>
-                          ) : (
-                            <Link href={item.href}>
-                              <div
-                                className={classNames(
-                                  item.current
-                                    ? 'text-black font-semibold dark:text-gray-100'
-                                    : 'text-lightGray dark:text-darkGrey',
-                                  'rounded-md mx-4 pt-2 text-sm font-medium mt-2.5 relative group'
-                                )}
-                                aria-current={item.current ? 'page' : undefined}
-                              >
-                                {item.name}
-                                <span
-                                  className={`h-[1px] inline-block bg-black dark:bg-white absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
-                                    router.asPath === item.href
-                                      ? 'w-full'
-                                      : 'w-0'
-                                  }`}
-                                >
-                                  &nbsp;
-                                </span>
-                              </div>
-                            </Link>
-                          )}
+                          </a>
                         </div>
                       ))}
                     </div>
