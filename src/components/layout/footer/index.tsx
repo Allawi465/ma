@@ -2,6 +2,7 @@
 import { ImGithub } from 'react-icons/im';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { MdOutgoingMail } from 'react-icons/md';
+
 export default function Footer() {
   return (
     <footer className="bg-white w-full dark:bg-transparent">

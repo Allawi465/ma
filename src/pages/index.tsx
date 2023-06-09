@@ -3,7 +3,6 @@ import { Syne } from 'next/font/google';
 import Introduction from '@/components/about';
 import Projects from '@/components/projects';
 import AboutMe from '@/components/about/aboutMe';
-import SkillsSection from '@/components/skills';
 
 const inter = Syne({ weight: '400', subsets: ['latin'] });
 
@@ -32,8 +31,6 @@ export default function Home() {
       </div>
 
       <AboutMe />
-
-      <SkillsSection />
     </div>
   );
 }
