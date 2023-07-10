@@ -1,6 +1,11 @@
-/** @type {import('tailwindcss').Config} */
+/**
+ * @type {import('@types/tailwindcss/tailwind-config').TailwindConfig}
+ */
 module.exports = {
-  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
+  content: [
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/flowbite-react/**/*.js',
+  ],
   darkMode: 'class',
   theme: {
     extend: {
@@ -29,5 +34,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 };
