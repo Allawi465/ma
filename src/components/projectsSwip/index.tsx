@@ -9,6 +9,7 @@ import eCommerceSite from '../../../public/ecommerce.png';
 import bookingSite from '../../../public/bookingSit.png';
 import auctionsSite from '../../../public/auctioSite.png';
 import notebookSite from '../../../public/notebook.png';
+import trailsHikes from '../../../public/trail-hikes.png';
 import { ImGithub } from 'react-icons/im';
 
 const MySlider = () => {
@@ -72,6 +73,37 @@ const MySlider = () => {
                 <Link
                   className="text-lightblue dark:text-sky-400 after:content-['_↗'] flex justify-end"
                   href="https://allawi465.github.io/holidaze/"
+                >
+                  Live site
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="w-[330x] sm:w-[380x] cursor-grab">
+          <div className=" shadow-lg rounded-lg h-[350px] sm:h-[330px]">
+            <Image
+              src={trailsHikes}
+              alt="Card Image"
+              className="w-full h-48 object-cover rounded-t-lg"
+            />
+            <div className="p-4">
+              <h3 className="text-slate-900 dark:text-white text-base font-medium tracking-tight">
+                Adventure-Trails-Hikes
+              </h3>
+              <p className="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+                A responsive website for Adventure Trails Hikes a new business
+                offering hiking experiences in various countries.
+              </p>
+              <div className="flex justify-between items-center py-3">
+                <a href="https://github.com/Allawi465/js-framewokrs-ca">
+                  <ImGithub size={25} />
+                </a>
+                <Link
+                  className="text-lightblue dark:text-sky-400 after:content-['_↗']"
+                  href="https://allawi465.github.io/Adventure-Trails-Hikes/"
                 >
                   Live site
                 </Link>

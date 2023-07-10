@@ -47,8 +47,8 @@ export default function AboutMe() {
               <h6 className="uppercase font-bold my-3">skills:</h6>
               <p className="profil-pargf">
                 <span className="font-bold">Languages & tools I work with</span>
-                : HTML, CSS, JavaScript, TypeScript React, Next.js, MySQL,
-                Adobe, Git, Netlify, Github & WordPress.
+                : HTML, CSS, JavaScript, TypeScript, React, Next.js, MySQL,
+                Figma, Git, Netlify, Github & WordPress.
               </p>
               <p className="my-2 text-base sm:text-xl text-lightGray dark:text-darkGrey">
                 In my regular day, I primarily use React and Next.js for

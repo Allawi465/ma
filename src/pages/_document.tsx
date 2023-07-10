@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta name="description" content="This is my personal portfolio" />
       </Head>
-      <body className="dark-theme scroll-smooth">
+      <body className="dark-theme">
         <Main />
         <NextScript />
       </body>

@@ -7,40 +7,32 @@ export default function Footer() {
   return (
     <footer className="bg-white w-full dark:bg-transparent">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div className="sm:flex sm:items-center sm:justify-between">
+        <div className="flex items-center justify-between flex-wrap">
           <div className="rounded-full sm:my-3 bg-dark text-white border-2 border-solid border-white dark:border-white inline-block">
             <a
-              href="#portfolio"
+              href="#header"
               className="w-14 h-14 flex items-center justify-center"
             >
               <span className="text-2xl font-bold">MA</span>
             </a>
           </div>
-          <ul className="flex flex-wrap items-center mb-6 text-sm font-medium sm:mb-0 text-black dark:text-gray-400">
-            <li>
-              <a href="https://github.com/Allawi465" className="p-2 m-3 ">
+          <ul className="flex flex-wrap items-center mb-3 text-sm font-medium sm:mb-0 text-black dark:text-gray-400">
+            <li className="flex items-center">
+              <a href="https://github.com/Allawi465" className="p-2 m-1 ">
                 <ImGithub size={25} />
               </a>
             </li>
-            <li>
-              <a href="mailto:allawi465@gmail.com" className="p-2 m-3">
+            <li className="flex items-center">
+              <a href="mailto:allawi465@gmail.com" className="p-2 m-1">
                 <MdOutgoingMail size={25} />
               </a>
             </li>
-            <li>
+            <li className="flex items-center">
               <a
                 href="https://www.linkedin.com/in/mohammed-allawi-89830621a/"
-                className="p-2 m-3"
+                className="p-2 m-1"
               >
                 <AiFillLinkedin size={25} />
-              </a>
-            </li>
-            <li>
-              <a
-                href="mailto:allawi465@gmail.com"
-                className="mr-4 hover:underline md:mr-6"
-              >
-                Contact
               </a>
             </li>
           </ul>

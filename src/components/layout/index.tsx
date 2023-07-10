@@ -10,7 +10,6 @@ type LayoutProps = {
 const Layout = ({ children }: LayoutProps): JSX.Element => {
   return (
     <div
-      className='scroll-smooth"'
       style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}
     >
       <Navbar />
