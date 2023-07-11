@@ -44,7 +44,7 @@ export default function Footer() {
             href="https://github.com/Allawi465"
             className="hover:underline ml-1 text-base"
           >
-            Allawi
+            M.Allawi
           </a>
           . All Rights Reserved.
         </span>
