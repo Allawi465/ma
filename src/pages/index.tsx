@@ -15,7 +15,7 @@ export default function Home() {
 
       <Projects />
 
-      <div className="arrow-scroll py-[120px]">
+      <div className="arrow-scroll pt-[97px] pb-[150px] sm:py-[140px] ">
         <a href="#about">
           <span className="arrow one border-r-2 border-b-2 border-sky-800 dark:border-sky-400"></span>
           <span className="arrow two border-r-2 border-b-2 border-sky-800 dark:border-sky-400"></span>

@@ -4,9 +4,9 @@ import { ArrowRightIcon } from '@heroicons/react/24/solid';
 
 export default function Introduction() {
   return (
-    <section id="portfolio" className="my-10 sm:my-20">
-      <div className="flex justify-center gap-2 h-[605px]">
-        <div className="my-auto">
+    <section id="portfolio" className="my-20">
+      <div className="flex justify-center h-[605px]">
+        <div className="mb-auto mt-[60px] sm:my-auto">
           <h1 className="text-3xl md:pt-4 text-center">
             Hello, I'm Mohammed Allawi
           </h1>

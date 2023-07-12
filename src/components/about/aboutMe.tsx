@@ -7,10 +7,11 @@ export default function AboutMe() {
         </h3>
         <div className="flex justify-center flex-wrap sm:flex-nowrap gap-3">
           <p className="max-w-[750px] leading-normal text-base sm:text-xl text-lightGray dark:text-darkGrey">
-            I recently graduated from Noroff School of Technology and Digital
-            Media. I love coding, and the challenges it presents me with. On my
-            free time I program in different languages to learn new things. In
-            the future I want to be a full stack developer.
+            I am a graduate of Noroff School of Technology and Digital Media. I
+            love coding, and the challenges it presents me with. I use a lot of
+            my spare time programming in different languages, working towards
+            evolving my knowledge and skills. I thrive to expand my experience
+            and hope to eventually be able to work as a full stack developer.
           </p>
         </div>
       </div>
@@ -20,14 +21,16 @@ export default function AboutMe() {
             <div className="mmax-w-full sm:max-w-[300px]">
               <h6 className="uppercase font-bold my-3">Profile</h6>
               <p className="leading-normal text-base sm:text-xl text-lightGray dark:text-darkGrey mb-2">
-                I'm living in Norway, I have been learning coding since high
-                school for about 2 years and I intend to continue my education.
-                I want to become a proffesional web developer.
+                I'm located in Norway and have been learning coding and
+                exploring the developing world during my education of 2 years. I
+                also intend to continue my education and been doing my own
+                research to acquire the expertise to become a proffesional web
+                developer.
               </p>
               <div className="flex justify-between sm:flex-col py-2">
                 <div>
                   <strong className="uppercase font-bold my-3">
-                    Fullname:
+                    Full name:
                   </strong>
                   <p className="leading-normal text-base sm:text-xl text-lightGray dark:text-darkGrey mb-2">
                     Mohammed Allawi
