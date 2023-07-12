@@ -21,8 +21,8 @@ const MySlider = () => {
       slidesPerView={'auto'}
     >
       <SwiperSlide>
-        <div className="w-[330x] sm:w-[380x] cursor-grab">
-          <div className="shadow-lg rounded-lg h-[350px] sm:h-[330px]">
+        <div className="sm:w-[380x] cursor-grab">
+          <div className="shadow-lg rounded-lg sm:h-[400px] aspect-w-16 aspect-h-9">
             <Image
               src={eCommerceSite}
               alt="Card Image"
@@ -55,8 +55,8 @@ const MySlider = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="w-[330x] sm:w-[380x] cursor-grab">
-          <div className=" shadow-lg rounded-lg h-[350px] sm:h-[330px]">
+        <div className="sm:w-[380x] cursor-grab">
+          <div className=" shadow-lg rounded-lg sm:h-[330px]">
             <Image
               src={bookingSite}
               alt="Card Image"
@@ -89,12 +89,13 @@ const MySlider = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="w-[330x] sm:w-[380x] cursor-grab">
-          <div className=" shadow-lg rounded-lg h-[350px] sm:h-[330px]">
+        <div className="sm:w-[380x] cursor-grab">
+          <div className=" shadow-lg rounded-lg sm:h-[330px]">
             <Image
               src={trailsHikes}
               alt="Card Image"
               className="w-full h-48 object-cover rounded-t-lg"
+              quality={100}
             />
             <div className="p-4 flex flex-col">
               <div className="flex-1">
@@ -123,12 +124,13 @@ const MySlider = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="w-[330x] sm:w-[380x] cursor-grab">
-          <div className="shadow-lg rounded-lg h-[350px] sm:h-[330px]">
+        <div className="sm:w-[380x] cursor-grab">
+          <div className="shadow-lg rounded-lg sm:h-[330px]">
             <Image
               src={auctionsSite}
               alt="Card Image"
               className="w-full h-48 object-cover rounded-t-lg"
+              quality={100}
             />
             <div className="p-4 flex flex-col">
               <div className="flex-1">
@@ -157,12 +159,13 @@ const MySlider = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="w-[330x] sm:w-[380x] cursor-grab">
-          <div className=" shadow-lg rounded-lg h-[350px] sm:h-[330px]">
+        <div className="sm:w-[380x] cursor-grab">
+          <div className=" shadow-lg rounded-lg sm:h-[330px]">
             <Image
               src={notebookSite}
               alt="Card Image"
               className="w-full h-48 object-cover rounded-t-lg"
+              quality={100}
             />
             <div className="p-4 flex flex-col">
               <div className="flex-1">

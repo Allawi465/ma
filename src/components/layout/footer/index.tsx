@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-white w-full dark:bg-transparent relative">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div className="flex flex-col items-start sm:items-center sm:flex-row sm:justify-between sm:flex-wrap">
+        <div className="flex flex-col items-start gap-2 sm:items-center sm:flex-row sm:justify-between sm:flex-wrap">
           <div className="rounded-full sm:my-3 bg-dark text-white border-2 border-solid border-white dark:border-white inline-block">
             <a
               href="#header"
@@ -39,7 +39,7 @@ export default function Footer() {
         </div>
         <a
           href="#header"
-          className="inline-block p-3 bg-black dark:bg-white dark:text-black text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:shadow-lg active:shadow-lg transition duration-150 ease-in-out bottom-[6.6rem] sm:bottom-8 right-5 absolute border border-transparent dark:hover:bg-transparent dark:hover:border-white dark:hover:text-white hover:bg-transparent hover:border-black hover:text-black"
+          className="inline-block p-3 bg-black dark:bg-white dark:text-black text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:shadow-lg active:shadow-lg transition duration-150 ease-in-out bottom-[6.9rem] sm:bottom-8 right-5 absolute border border-transparent dark:hover:bg-transparent dark:hover:border-white dark:hover:text-white hover:bg-transparent hover:border-black hover:text-black"
         >
           <svg
             aria-hidden="true"

@@ -9,8 +9,7 @@
 }
 
 .swiper {
-  height: 370px !important;
-  padding: 10px !important;
+  min-height: 370px !important;
 }
 
 .swiper-slide {
@@ -63,5 +62,19 @@
 @media (max-width: 423px) {
   .swiper-slide {
     width: 330px !important;
+  }
+
+  .card-project {
+    width: 330px !important;
+  }
+}
+
+@media (max-width: 300px) {
+  .swiper-slide {
+    width: 220px !important;
+  }
+
+  .card-project {
+    width: 220px !important;
   }
 }
